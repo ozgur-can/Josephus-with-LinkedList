@@ -127,7 +127,7 @@ class LinkedList
         
     }
 
-    goster()
+    show()
     {
 
         let temp = this.head;
@@ -147,13 +147,13 @@ class LinkedList
         for(let a=2;a<=i;a++)
         this.addtoLast(a);
 
-        this.goster();
+        this.show();
         print(" ");
         let L = this.length;
         while(L>1)
         {
             this.rotation(j-1);
-            this.goster();
+            this.show();
             print(this.head.value+" gider");
             document.write(this.head.value+" ");
             temp=this.head;
