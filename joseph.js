@@ -99,7 +99,7 @@ class LinkedList
     }
 
 
-    dondurme(s)
+    rotation(s)
     {
         if(s==0)
         return;
@@ -152,7 +152,7 @@ class LinkedList
         let L = this.length;
         while(L>1)
         {
-            this.dondurme(j-1);
+            this.rotation(j-1);
             this.goster();
             print(this.head.value+" gider");
             document.write(this.head.value+" ");
