@@ -39,9 +39,7 @@ class LinkedList
             this.length++;
             let newNode={'value':value, 'next':this.head, 'length':this.length};;
             this.head=newNode;
-            
         }
-
     }
 
     deletefromLast()
@@ -66,8 +64,7 @@ class LinkedList
     
                 now.next=null;
                 this.length--;
-            }
-            
+            }    
         }
     }
 
@@ -93,11 +90,8 @@ class LinkedList
                 this.head=now;      // set the head to the now
                 this.length--;
             }
-
-            
         }
     }
-
 
     rotation(s)
     {
@@ -124,12 +118,10 @@ class LinkedList
         now.next=this.head;
         this.head=sth.next;
         sth.next=null;
-        
     }
 
     show()
     {
-
         let temp = this.head;
         while(temp.next!=null)
         {
@@ -139,7 +131,6 @@ class LinkedList
         print(temp);
     }
 
-    
     josep(i,j)
     {
         let temp;
@@ -160,15 +151,13 @@ class LinkedList
             this.deletefromHead();
             L--;
         }
-        print(temp.next.value+" hayatta kalir");
-        
-    }
-        
+        print(temp.next.value+" hayatta kalir");   
+    }   
 }
 
 function setup()
 {
-let example = new LinkedList();
-example.josep(14,8);
+    let example = new LinkedList();
+    example.josep(14,8);
 
 }
